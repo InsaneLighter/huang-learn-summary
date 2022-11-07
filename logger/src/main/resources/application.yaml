@@ -1,0 +1,10 @@
+server:
+  port: 17002
+logging:
+  #实际使用logback.xml中的日志文件
+  file:
+    path: 'H:\personal\file'
+    name: 'H:\personal\file\log.log'
+  #实际 非logback.xml中确认的日志等级
+  level:
+    root: info

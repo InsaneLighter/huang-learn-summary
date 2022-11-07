@@ -1,0 +1,15 @@
+server:
+  port: 17003
+#velocity
+spring:
+  velocity:
+    cache: false
+    charset: utf-8
+    check-template-location: true
+    content-type: text/html
+    enabled: true
+    prefix: /templates/
+    suffix: .vm
+    properties:
+      velocimacro.library: VM_global_library.vm
+#    toolbox-config-location: /toolbox.xml

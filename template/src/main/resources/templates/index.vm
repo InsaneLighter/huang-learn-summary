@@ -1,0 +1,10 @@
+<html>
+    <body>
+    <div>
+        $!{key1}
+    </div>
+    <div>
+        $!{key2}
+    </div>
+    </body>
+</html>
