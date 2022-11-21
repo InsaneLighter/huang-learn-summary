@@ -23,6 +23,13 @@ public class FileDemo {
     String touchFileName = "H:\\personal\\project\\huang-learn-summary\\file\\src\\main\\resources\\touch\\file\\touch.txt";
 
     @Test
+    public void listFiles(){
+        String fileName = "H:\\personal\\张蝶";
+        File file = new File(fileName);
+        FileUtil.loopFiles(file).stream().map(File::getName).forEach(item->log.info("fileName: {}",item));
+    }
+
+    @Test
     public void move(){
         FileUtil.move(new File(fileName), new File(moveFileName), true);
         // after move path H:\personal\project\huang-learn-summary\file\FileDemo.txt.bak

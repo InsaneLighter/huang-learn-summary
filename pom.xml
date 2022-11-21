@@ -18,6 +18,9 @@
         <module>template</module>
         <module>zip</module>
         <module>system</module>
+        <module>springboot-kafka</module>
+        <module>date</module>
+        <module>springboot-properties-read</module>
     </modules>
 
     <properties>
