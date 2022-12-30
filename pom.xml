@@ -21,6 +21,10 @@
         <module>springboot-kafka</module>
         <module>date</module>
         <module>springboot-properties-read</module>
+        <module>springboot-config</module>
+        <module>mail</module>
+        <module>package</module>
+        <module>tree-data</module>
     </modules>
 
     <properties>

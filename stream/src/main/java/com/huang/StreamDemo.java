@@ -8,6 +8,7 @@ import java.util.List;
 import java.util.Objects;
 import java.util.Optional;
 import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 /**
  * @Time 2022-10-26 17:19
@@ -164,6 +165,14 @@ public class StreamDemo {
         list.add(normalList);
         list.add(normalList);
         List<String> collectList = list.stream().flatMap(item -> item.stream().filter(Objects::nonNull)).collect(Collectors.toList());
+        log.info("collectList:{}",collectList);
+    }
+
+    @Test
+    public void toUpper(){
+        List<String> collectList = Stream.of("a", "b", "c", "d")
+                .map(String::toUpperCase)
+                .collect(Collectors.toList());
         log.info("collectList:{}",collectList);
     }
 

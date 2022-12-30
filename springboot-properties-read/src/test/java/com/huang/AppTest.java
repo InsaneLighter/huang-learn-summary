@@ -1,9 +1,6 @@
 package com.huang;
 
-import com.huang.config.ConfigurationPropertiesConfig;
-import com.huang.config.FixedSpecificConfig;
-import com.huang.config.SpecificFileConfig;
-import com.huang.config.ValueConfig;
+import com.huang.config.*;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -51,5 +48,10 @@ public class AppTest {
     void fixedSpecificConfig(){
         String key = fixedSpecificConfig.getKey();
         String name = fixedSpecificConfig.getName(); //获取中文乱码
+    }
+
+    @Test
+    void envConstant(){
+        System.out.println(EnvConstant.applicationName);
     }
 }
